@@ -1,5 +1,5 @@
 package ru.job4j.inheritance;
 
 public class Program {
-    String name;
+    private String name;
 }

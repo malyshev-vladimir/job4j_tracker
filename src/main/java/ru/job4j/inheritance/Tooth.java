@@ -2,9 +2,9 @@ package ru.job4j.inheritance;
 
 public class Tooth {
 
-    int toothNumber;
-    boolean needToBeTreated = false;
-    boolean needToBeRemoved = false;
+    private int toothNumber;
+    private boolean needToBeTreated = false;
+    private boolean needToBeRemoved = false;
 
     public Tooth(int toothNumber, boolean needToBeTreated, boolean needToBeRemoved) {
         this.toothNumber = toothNumber;

@@ -2,7 +2,7 @@ package ru.job4j.inheritance;
 
 public class Doctor extends Profession {
 
-    int doctorsLicenseNumber;
+    private int doctorsLicenseNumber;
 
     public Doctor(String name, String surname, String education, String birthday, int doctorsLicenseNumber) {
         super(name, surname, education, birthday);

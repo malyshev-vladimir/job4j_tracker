@@ -2,7 +2,7 @@ package ru.job4j.inheritance;
 
 public class Surgeon extends Doctor {
 
-    String hospital;
+    private String hospital;
 
     public Surgeon(String name, String surname, String education, String birthday, int doctorsLicenseNumber, String hospital) {
         super(name, surname, education, birthday, doctorsLicenseNumber);
@@ -14,6 +14,6 @@ public class Surgeon extends Doctor {
     }
 
     public void doOperation(Patient patient) {
-        patient.haveOperation = true;
+        patient.changeOperationStatus();
     }
 }
