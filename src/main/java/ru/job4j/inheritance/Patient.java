@@ -4,7 +4,7 @@ public class Patient {
     private String name;
     private String surname;
     private int patientNumber;
-    private boolean haveOperation = false;
+    private boolean haveOperation;
 
     public Patient(String name, String surname, int patientNumber, boolean haveOperation) {
     }
