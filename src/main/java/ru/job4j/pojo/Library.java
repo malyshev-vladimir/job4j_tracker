@@ -19,8 +19,8 @@ public class Library {
 
     public static void outputToConsoleBookWithName(String name, Book[] thisShelf) {
         for (int i = 0; i < thisShelf.length; i++) {
-            if (thisShelf[i].getNameOfBook().equals("Clean code")) {
-                System.out.println(thisShelf[i].getNameOfBook() + " имеет " + i + 1 + "-ый номер");
+            if ("Clean code".equals(thisShelf[i].getNameOfBook())) {
+                System.out.println(thisShelf[i].getNameOfBook() + " имеет " + (i + 1) + "-ый номер");
             }
         }
         System.out.println();
