@@ -41,7 +41,7 @@ public class Item {
         this.name = name;
     }
 
-    public String getCreated() {
-        return created.format(FORMATTER);
+    public LocalDateTime getCreated() {
+        return created;
     }
 }
