@@ -2,10 +2,21 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * The class describes account with a requisite and a balance.
+ */
 public class Account {
+    /**
+     * The class attributes consist of requisite and balance.
+     */
     private String requisite;
     private double balance;
 
+    /**
+     * The constructor of the class "User".
+     * @param requisite account's requisite
+     * @param balance account's balance
+     */
     public Account(String requisite, double balance) {
         this.requisite = requisite;
         this.balance = balance;

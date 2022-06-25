@@ -2,10 +2,21 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * The class describes user with a passport number and a username.
+ */
 public class User {
+    /**
+     * The class attributes consist of passport number and username.
+     */
     private String passport;
     private String username;
 
+    /**
+     * The constructor of the class "User".
+     * @param passport user's passport number
+     * @param username user's username
+     */
     public User(String passport, String username) {
         this.passport = passport;
         this.username = username;
