@@ -3,16 +3,13 @@ package ru.job4j.collection;
 import java.util.*;
 
 public class Departments {
-
     public static List<String> fillGaps(List<String> deps) {
         Set<String> tmp = new LinkedHashSet<>();
         for (String value : deps) {
-            String[] array = value.split("/");
-            String start = array[0];
-            tmp.add(start);
-            for (int index = 1; index < value.split("/").length; index++) {
-                start += "/" + array[index];
-                tmp.add(start);
+            String start = "";
+            for (String el : value.split("/")) {
+                start += "/" +  el;
+                tmp.add(start.substring(1));
             }
         }
         return new ArrayList<>(tmp);
