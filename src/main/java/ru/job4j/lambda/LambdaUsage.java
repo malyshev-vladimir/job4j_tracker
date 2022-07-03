@@ -5,10 +5,12 @@ import java.util.Comparator;
 import java.util.List;
 
 public class LambdaUsage {
-
     public static void main(String[] args) {
         List<String> strings = Arrays.asList("eeeee", "a",  "ccc", "dddd", "bb");
-        Comparator<String> comparator = (left, right) -> Integer.compare(right.length(), left.length());
+        Comparator<String> comparator = (left, right) -> {
+            System.out.println("Сравнивается: " + left + " и " + right);
+            return Integer.compare(right.length(), left.length());
+        };
         strings.sort(comparator);
         for (String str : strings) {
             System.out.println(str);
