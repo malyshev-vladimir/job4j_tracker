@@ -39,7 +39,7 @@ public class ListToMapTest {
         Map<String, Student> expected = new LinkedHashMap<>();
         expected.put("Ivanov", new Student("Ivanov", 30));
         expected.put("Petrov", new Student("Petrov", 40));
-        expected.put("Sidorov", new Student("Sidorov", 50));
+        expected.put("Sidorov", new Student("Sidorov", 60));
         assertEquals(expected, result);
     }
 }
