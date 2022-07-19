@@ -49,11 +49,11 @@ public class SchoolTest {
     @Test
     public void whenCollectClassV() {
         List<Student> students = List.of(
-                new Student( "Surname1", 10),
-                new Student( "Surname3", 30),
-                new Student( "Surname4", 40),
-                new Student( "Surname6", 60),
-                new Student( "Surname9", 90)
+                new Student("Surname1", 10),
+                new Student("Surname3", 30),
+                new Student("Surname4", 40),
+                new Student("Surname6", 60),
+                new Student("Surname9", 90)
         );
         School sc = new School();
         Predicate<Student> pr = student -> student.getScore() < 50 && student.getScore() >= 0;
